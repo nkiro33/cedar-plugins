@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>WP Help Alternative: Move Your WP Help Documents in One Click (2026)</title>
+<meta name="description" content="WP Help hasn't been updated since April 2024. How to move your WP Help documents to a maintained client handbook plugin with their order, sections, drafts and links intact.">
+<link rel="canonical" href="https://nkiro33.github.io/cedar-plugins/wp-help-alternative/">
+<link rel="icon" href="../assets/hintwise-icon.png" type="image/png">
+<meta property="og:type" content="article">
+<meta property="og:title" content="WP Help alternative: move your documents in one click">
+<meta property="og:description" content="WP Help hasn't been updated since April 2024. Here's how to move its documents, with order, sections and links intact.">
+<meta property="og:url" content="https://nkiro33.github.io/cedar-plugins/wp-help-alternative/">
+<meta property="og:image" content="https://nkiro33.github.io/cedar-plugins/assets/og-hintwise.png">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="stylesheet" href="../assets/style.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "HowTo",
+      "name": "Move WP Help documents to Cedar Hintwise",
+      "step": [
+        { "@type": "HowToStep", "name": "Install Cedar Hintwise", "text": "Install and activate Cedar Hintwise from Plugins → Add New, next to WP Help." },
+        { "@type": "HowToStep", "name": "Open the Starter library", "text": "Go to Site Guide → Starter library. Hintwise finds your WP Help documents and shows a Switching from WP Help? box." },
+        { "@type": "HowToStep", "name": "Import", "text": "Keep the menu name your team knows if you like, then click Import. Titles, content, drafts, order, sections and links between documents come across." },
+        { "@type": "HowToStep", "name": "Check and switch off WP Help", "text": "Open the handbook, check the guides, then deactivate WP Help on the Plugins screen. WP Help's own documents are never changed." }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        { "@type": "Question", "name": "Is WP Help still maintained?",
+          "acceptedAnswer": { "@type": "Answer", "text": "WP Help 1.7.5 was last updated on WordPress.org on April 20, 2024 and is marked as tested up to WordPress 6.5. It still installs and works, but it has had no updates since." } },
+        { "@type": "Question", "name": "Do I lose my WP Help documents when I switch?",
+          "acceptedAnswer": { "@type": "Answer", "text": "No. The import copies them. WP Help's documents are not changed or deleted, so you can compare both before you deactivate WP Help." } },
+        { "@type": "Question", "name": "Do links between WP Help documents still work after importing?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Yes. Links that pointed to another WP Help document are rewritten to open the matching guide in the new handbook." } },
+        { "@type": "Question", "name": "Can I import from the command line?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Yes, with WP-CLI: wp hintwise import-wp-help, with --dry-run to preview." } }
+      ]
+    }
+  ]
+}
+</script>
+</head>
+<body>
+<header><img src="../assets/hintwise-icon.png" alt=""><a href="../">Cedar Plugins</a></header>
+<main>
+<h1>WP Help alternative: move your documents in one click</h1>
+<p class="lead">WP Help has been the go-to plugin for putting a client handbook inside wp-admin. It hasn't been updated since April 2024. This guide shows how to move its documents to a maintained plugin without retyping anything or breaking the links between them.</p>
+
+<!-- STATUS: swap this block for the wordpress.org link once Cedar Hintwise is approved. -->
+<p class="note"><strong>Status, October 2026:</strong> Cedar Hintwise is in the final WordPress.org plugin review. When it's approved it will be free at <code>wordpress.org/plugins/cedar-hintwise</code> and installable from Plugins → Add New.</p>
+
+<h2>Where WP Help stands</h2>
+<ul>
+  <li><strong>Last update:</strong> version 1.7.5, April 20, 2024.</li>
+  <li><strong>Tested up to:</strong> WordPress 6.5. On newer WordPress versions the plugin page warns that it hasn't been tested with your release.</li>
+  <li><strong>Still popular:</strong> about 1,900 downloads a month on WordPress.org, so plenty of agencies and site owners still rely on it.</li>
+</ul>
+<p>Nothing breaks the day a plugin stops being updated, but every new WordPress release is a small risk, and there's nobody to fix problems when they appear. If client documentation matters to you, it's worth moving while everything still works.</p>
+
+<h2>How to move, step by step</h2>
+<p>Takes about five minutes. Keep WP Help active until you've checked the result.</p>
+
+<h3>1. Install Cedar Hintwise next to WP Help</h3>
+<p>Plugins → Add New, search for <em>Cedar Hintwise</em>, install and activate. Both plugins can run side by side.</p>
+
+<h3>2. Open the Starter library</h3>
+<p>Go to <strong>Site Guide → Starter library</strong>. Hintwise detects your WP Help documents and offers to copy them, and can keep the menu name your team already knows.</p>
+<figure>
+  <img src="../assets/import-box.png" width="840" height="358" alt="The Switching from WP Help? box on the Starter library screen, offering to import 5 documents and keep the menu name Bakery Help">
+  <figcaption>Real screenshot: a test site with WP Help 1.7.5 and five documents.</figcaption>
+</figure>
+
+<h3>3. Click Import</h3>
+<figure>
+  <img src="../assets/import-done.png" width="840" height="288" alt="Done: 5 WP Help documents are now in your handbook. WP Help was not changed.">
+</figure>
+
+<h3>4. Check the handbook, then switch off WP Help</h3>
+<p>Open the handbook and click through a few guides. Sections, order and drafts are as they were. When you're happy, deactivate WP Help on the Plugins screen.</p>
+<figure>
+  <img src="../assets/site-guide.png" width="1400" height="560" alt="The imported handbook, Bakery Help, with the Running the shop section containing Refund an order and Add a product">
+  <figcaption>The imported handbook keeps WP Help's sections and order. The draft stays a draft.</figcaption>
+</figure>
+
+<h2>What comes across</h2>
+<ul>
+  <li>Titles and content, including block editor content</li>
+  <li>Drafts (they stay drafts) and the document order</li>
+  <li>Sections: child documents stay under their parent</li>
+  <li>Links between documents, rewritten to open the new guides</li>
+  <li>Optionally, WP Help's menu name (for example "Bakery Help")</li>
+</ul>
+<p>Running the import again later only adds documents written since the last import, so nothing is duplicated. WP Help's own documents are never changed.</p>
+<p>Prefer the command line? <code>wp hintwise import-wp-help --dry-run</code> shows what would be imported; drop <code>--dry-run</code> to run it.</p>
+
+<h2>What you get on top</h2>
+<div class="table-wrap">
+<table>
+  <thead><tr><th></th><th>WP Help 1.7.5</th><th>Cedar Hintwise (free)</th></tr></thead>
+  <tbody>
+    <tr><td>Last updated</td><td>April 2024</td><td>Actively maintained</td></tr>
+    <tr><td>Ready-made guides</td><td>Start from an empty page</td><td>Starter library of plain-English guides that match the site (block or classic theme, WooCommerce)</td></tr>
+    <tr><td>Help on the right screen</td><td>—</td><td>Pin guides to admin screens; a help button shows them, also in the block editor</td></tr>
+    <tr><td>Who sees what</td><td>Everyone who can edit posts</td><td>Limit guides to roles, such as shop managers</td></tr>
+    <tr><td>Your contact details</td><td>—</td><td>Contact card under every guide and in the help panel</td></tr>
+    <tr><td>Reuse on other sites</td><td>Free auto-sync from one source site</td><td>Export / import a file; automatic sync is in Pro</td></tr>
+  </tbody>
+</table>
+</div>
+<p>Pro adds guided tours, a printable handover pack, required reading and white-label branding. The free plugin is complete on its own; you don't need Pro to switch.</p>
+
+<h2>FAQ</h2>
+<h3>Will my clients notice the switch?</h3>
+<p>If you keep WP Help's menu name, the menu item stays where they expect it, with the same documents in the same order.</p>
+<h3>Are the guides public?</h3>
+<p>No. Like WP Help's documents, guides live only in wp-admin. They have no front-end URL, are left out of sitemaps, and the REST API only serves them to people who can edit them.</p>
+<h3>What if I use WP Help's sync between sites?</h3>
+<p>Import on each site, or export the handbook from one site and import the file on the others. Automatic sync from a master site is a Pro feature.</p>
+
+<p style="margin-top:2.5em"><a class="cta" href="https://wordpress.org/plugins/search/cedar+hintwise/">Find Cedar Hintwise on WordPress.org</a></p>
+</main>
+<footer>Cedar Plugins makes small WordPress plugins for agencies and site owners. WP Help is a separate plugin by its own authors; this page is not affiliated with them.</footer>
+</body>
+</html>
